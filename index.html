@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us – decor options</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root { --navy:#16325c; --red:#C4122F; --text:#3a3a3a; --muted:#6b6b6b; --bg:#f7f7f8; --line:#e3e3e6; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#ececef; font-family:"Open Sans", Arial, sans-serif; color:var(--text); }
+  .wrap { max-width:1000px; margin:0 auto; padding:24px 16px 60px; }
+  .nav { position:sticky; top:0; z-index:2; background:#ececef; padding:10px 0; display:flex; gap:10px; flex-wrap:wrap; }
+  .nav a { font:600 13px "Open Sans",sans-serif; color:var(--navy); text-decoration:none; border:1px solid #c9c9cf; background:#fff; padding:6px 12px; border-radius:6px; }
+  .label { font:600 13px/1 "Open Sans",sans-serif; letter-spacing:1.5px; text-transform:uppercase; color:var(--red); margin:40px 0 10px; scroll-margin-top:60px; }
+  .label span { color:var(--muted); font-weight:400; letter-spacing:0; text-transform:none; margin-left:8px; }
+  .page { background:var(--bg); padding:48px 56px; border:1px solid var(--line); }
+  .page h1 { font:700 56px/1.1 Georgia,serif; color:#333; margin:0 0 28px; }
+  .page p { font-size:17px; line-height:1.8; margin:0 0 18px; text-align:justify; hyphens:auto; -webkit-hyphens:auto; }
+
+  .a blockquote { margin:30px 0; padding:4px 0 4px 26px; border-left:4px solid var(--red); font:italic 23px/1.55 Georgia,serif; color:var(--navy); }
+
+  .b h1 { text-align:center; }
+  .b h1::after { content:""; display:block; width:70px; height:3px; background:var(--red); margin:18px auto 0; }
+  .b blockquote { position:relative; margin:44px auto; max-width:760px; padding:34px 20px 26px; text-align:center; border-top:1px solid var(--line); border-bottom:1px solid var(--line); font:italic 22px/1.6 Georgia,serif; color:var(--navy); }
+  .b blockquote::before { content:"\201C"; position:absolute; top:-30px; left:50%; transform:translateX(-50%); background:var(--bg); padding:0 14px; font:72px/1 Georgia,serif; color:var(--red); }
+
+  .c > p:first-of-type::first-letter { float:left; font:700 64px/0.85 Georgia,serif; color:var(--red); margin:8px 10px 0 0; }
+  .c blockquote { margin:32px 0; padding:24px 30px; background:#fff; border:1px solid var(--line); border-radius:10px; font:21px/1.6 Georgia,serif; color:var(--navy); }
+  .c blockquote small { display:block; font:600 12px/1 "Open Sans",sans-serif; letter-spacing:1.5px; text-transform:uppercase; color:var(--red); margin-bottom:12px; }
+
+  @media (max-width:640px){
+    .page { padding:28px 20px; }
+    .page h1 { font-size:40px; }
+    .page p { font-size:16px; }
+    .page blockquote { font-size:19px !important; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="nav"><a href="#A">Option A</a><a href="#B">Option B</a><a href="#C">Option C</a></div>
+
+  <div class="label" id="A">Option A <span>Left-rule pull quotes</span></div>
+  <div class="page a"></div>
+
+  <div class="label" id="B">Option B <span>Centred quotes with a large quotation mark</span></div>
+  <div class="page b"></div>
+
+  <div class="label" id="C">Option C <span>Drop cap + soft card quotes</span></div>
+  <div class="page c"></div>
+</div>
+
+<template id="content">
+  <h1>About Us</h1>
+  <p>Founded in the summer of 2024 by Professor Sandeep Juneja, the Centre was supported by Safexpress Pvt. Ltd. in September 2024. The Centre aspires to become a leading hub for research and education in data science and artificial intelligence.</p>
+  <blockquote data-label="Our mission">Our mission is to advance knowledge, develop talent, and enable more effective decision-making in response to the complex challenges facing society.</blockquote>
+  <p>We pursue both theoretical and applied research, combining rigorous data analysis and mathematical modelling with advances in artificial intelligence and machine learning.</p>
+  <p>The Centre draws upon Ashoka University’s strengths across computer science, mathematics, economics, statistics, the physical sciences, and the social sciences to foster interdisciplinary research. By bringing together diverse perspectives and expertise, we aim to develop new approaches to understanding and solving data-driven problems.</p>
+  <p>A key focus of the Centre is nurturing the next generation of researchers and practitioners. We provide students with a strong foundation in mathematics, computation, and statistics, enabling them to work with large and complex datasets and uncover insights that can inform meaningful decisions.</p>
+  <p>The Centre also plays an active role in strengthening the broader data science and AI ecosystem through a range of academic initiatives. These include exSPLOre — Explorations in Statistics, Probability, Learning and Optimization Research, a five-day flagship programme featuring lectures and tutorials by eminent researchers on contemporary topics in statistics, probability, machine learning, and optimisation. The event also includes an Industry Day, with industry showcases and panel discussions bringing together academic and industry perspectives.</p>
+  <p>In addition, the Centre organizes an annual two-day workshop on AI and machine-learning methods for weather and climate modelling, bringing together leading researchers from India and around the world to explore emerging approaches in this important area. Its colloquium series and short courses provide further opportunities for students and researchers to engage with experts working at the forefront of their fields.</p>
+  <p>The Centre’s current research spans several important application areas, including quantitative finance with a focus on Indian markets and weather, climate, and pollution modelling. Across these domains, we apply advanced quantitative techniques alongside modern AI and machine-learning methods to develop new insights and solutions.</p>
+  <p>On the conceptual front, our research focuses on generative AI, including diffusion models, and sequential learning algorithms. These foundational advances directly inform and strengthen our applied research, creating a continuous exchange between theory, methodology, and real-world impact.</p>
+  <blockquote data-label="Our vision">Through research, education, and collaboration, the Centre seeks to advance the science of data-driven discovery and contribute to the responsible development of technologies that can create lasting impact.</blockquote>
+</template>
+
+<script>
+  const tpl = document.getElementById('content');
+  document.querySelectorAll('.page').forEach(page => {
+    page.appendChild(tpl.content.cloneNode(true));
+    if (page.classList.contains('c')) {
+      page.querySelectorAll('blockquote').forEach(q => {
+        const s = document.createElement('small');
+        s.textContent = q.dataset.label;
+        q.prepend(s);
+      });
+    }
+  });
+</script>
+</body>
+</html>
